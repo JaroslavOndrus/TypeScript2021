@@ -11,7 +11,7 @@ function totalDistance(heightOfStep, lenghtOfStep, heightOfTower){
 
 //
 
-const number1 = 3;
+/*const number1 = 3;
 const number2 = 4;
 const number3 = 3;
 
@@ -27,10 +27,10 @@ function EqualityOfThreeValues(number1, number2, number3){
             else{
                         return 0;
             }
-}
+}*/
 
 //
-/*
+
 const tr1 = 3;
 const tr2 = 4;
 const tr3 = 5;
@@ -48,6 +48,6 @@ function IsItATriangle(tr1, tr2, tr3){
 
 //
 
-*/
+
 
 
