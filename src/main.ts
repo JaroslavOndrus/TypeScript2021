@@ -1,4 +1,4 @@
-const heightOfStep = 0.3;
+/*const heightOfStep = 0.3;
 const lenghtOfStep = 0.2;
 const heightOfTower = 25;
 
@@ -7,11 +7,11 @@ console.log(totalDistance(heightOfStep, lenghtOfStep, heightOfTower))
 
 function totalDistance(heightOfStep, lenghtOfStep, heightOfTower){
             return(heightOfTower/heightOfStep)*(heightOfStep+lenghtOfStep);
-}
+}*/
 
 //
 
-/*t number1 = 3;
+const number1 = 3;
 const number2 = 4;
 const number3 = 3;
 
@@ -30,7 +30,7 @@ function EqualityOfThreeValues(number1, number2, number3){
 }
 
 //
-
+/*
 const tr1 = 3;
 const tr2 = 4;
 const tr3 = 5;
