@@ -1,16 +1,26 @@
-let string1 = "convention";
-let string2 = "tio";
+var numbers = [10, 4, 1, 4, -10, -50, 32, 21];
+var min;
+var max; 
 
+max = min = numbers[0];
 
+console.log(ReturnMinMax(numbers, min, max));
 
-console.log(StringEndsWith(string1, string2));
+function ReturnMinMax(numbers, min, max){
 
-function StringEndsWith(string1, string2){
-
-    if(string1.endsWith(string2)){
-        return true;
+    for(let i = 1; i < numbers.length; i++){
+        if(max < numbers[i]){
+            max = numbers[i];
+        }
     }
-    else{
-        return false;
+
+    for(let i = 0; i < numbers.length; i++){
+        if(min > numbers[i]){
+            min = numbers[i];
+        }
     }
+
+    console.log("The Smallest Number is: "+min);
+    console.log("The Biggest Number is: "+max);
+    console.log("The Difference Between Min And Max Number is: " + (max - min));
 }
