@@ -1,26 +1,13 @@
-var numbers = [10, 4, 1, 4, -10, -50, 32, 21];
-var min;
-var max; 
+console.log(RockPaperScissors("rock","scissors"));
 
-max = min = numbers[0];
-
-console.log(ReturnMinMax(numbers, min, max));
-
-function ReturnMinMax(numbers, min, max){
-
-    for(let i = 1; i < numbers.length; i++){
-        if(max < numbers[i]){
-            max = numbers[i];
-        }
+function RockPaperScissors(player1:string, player2:string){
+    if(player1 == "rock" && player2 == "rock" || player1 == "scissors" && player2 == "scissors" || player1 == "paper" && player2 == "paper"){
+        return "TIE";
     }
-
-    for(let i = 0; i < numbers.length; i++){
-        if(min > numbers[i]){
-            min = numbers[i];
-        }
+    else if(player1 == "rock" && player2 == "scissors" || player1 == "scissors" && player2 == "paper" || player1 == "paper" && player2 == "rock"){
+        return "PLAYER 1 WINS!";
     }
-
-    console.log("The Smallest Number is: "+min);
-    console.log("The Biggest Number is: "+max);
-    console.log("The Difference Between Min And Max Number is: " + (max - min));
+    else{
+        return "PLAYER 2 WINS!";
+    }
 }
