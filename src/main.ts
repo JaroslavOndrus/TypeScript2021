@@ -1,24 +1,16 @@
-var array = [5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243];
-var even = 0;
-var odd = 0;
+let string1 = "convention";
+let string2 = "tio";
 
-for(let i = 0; i < array.length; i++){
 
-    if(array[i] %2 == 0){
-        even += array[i];
+
+console.log(StringEndsWith(string1, string2));
+
+function StringEndsWith(string1, string2){
+
+    if(string1.endsWith(string2)){
+        return true;
     }
     else{
-        odd += array[i];
+        return false;
     }
-}
-
-if(even > odd){
-    console.log("Even > Odd");
-    var a = even - odd;
-    console.log(a);
-}
-else{
-    console.log("Odd > Even");
-    var b = odd - even;
-    console.log(b);
 }
